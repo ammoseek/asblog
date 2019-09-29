@@ -46,7 +46,8 @@ const HeaderContainer = Styled.div`
       text-decoration: none;
       white-space: nowrap;
       box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.34);
-
+      height: 25px;
+      transition: all 0.2s;
    }
    .nav-item:hover,
    .nav-item:active {
@@ -54,6 +55,8 @@ const HeaderContainer = Styled.div`
       color: lightblue;
       cursor: pointer;
       box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+      padding: 0.4rem;
+      transition: all 0.2s;
    }
 `
 
