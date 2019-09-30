@@ -47,16 +47,16 @@ const HeaderContainer = Styled.div`
       white-space: nowrap;
       box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.34);
       height: 25px;
-      transition: all 0.2s;
+      transition: all 0.3s;
    }
    .nav-item:hover,
    .nav-item:active {
-      background-color: gray;
-      color: lightblue;
+      //background-color: gray;
+      color: #3a3a3a;
       cursor: pointer;
-      box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+      //box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
       padding: 0.4rem;
-      transition: all 0.2s;
+      transition: all 0.3s;
    }
 `
 

@@ -19,9 +19,17 @@ const PostCSS = Styled.article`
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
       font-size: 1.3rem;
       clip-path: polygon(1% 0%, 100% 0%, 99% 100%, 0% 100%);
+      transition: all 0.3s;
+      margin-bottom: 0.1rem;
    }
    .postTitle-wrap {
       filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+   }
+   h2:hover {
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+      transition: all 0.3s;
+      color: #3a3a3a;
    }
    a {
       color: #000;
@@ -29,6 +37,10 @@ const PostCSS = Styled.article`
    }
    p {
       font-size: 1rem;
+   }
+   .date {
+      font-style: italic;
+      font-size: 0.7rem;
    }
    .read-more {
       font-size: 0.9rem;
@@ -70,7 +82,7 @@ const Listing = () => {
                      <h2>{node.frontmatter.title}</h2>
                   </div>
                </Link>
-               <p>{node.frontmatter.date}</p>
+               <p className="date">{node.frontmatter.date}</p>
                <p>{node.excerpt}</p>
                <Link
                   className="read-more"
