@@ -22,7 +22,7 @@ const HeaderContainer = Styled.div`
    grid-template-columns: 3fr 1fr;
    align-items: center;
 
-   @media (max-width:650px) {
+   @media (max-width:720px) {
       grid-template-columns: 1fr;
       height: 200px;
       text-align:center;

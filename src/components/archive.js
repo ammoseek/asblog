@@ -14,16 +14,15 @@ const ListCSS = Styled.ul`
    margin: 0;
    list-style: none;
    li {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
    }
    a {
       font-size: 0.9rem;
       text-decoration: underline;
       color: blue;
    }
-   a:hover,
-   a:active {
-      color: lightblue;
+   a:hover {
+      color: #001489;
    }
 `
 

@@ -26,6 +26,10 @@ const MainLayout = Styled.main`
    display: grid;
    grid-template-columns: 3fr 1fr;
    grid-gap: 40px;
+
+   @media (max-width:720px) {
+      grid-template-columns: 1fr;
+   }
 `
 const FooterCSS = Styled.footer`
    text-align: center;

@@ -12,15 +12,16 @@ const PostCSS = Styled.article`
    h2 {
       background-color: #D31918;
       overflow: visible;
-      margin-left: -1.5rem;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      border-bottom-left-radius: 5px;
+      margin-left: -1.8rem;
       padding: 0.5rem;
-      padding-left: 1rem;
-      width: calc(100% + 3rem);
+      padding-left: 1.5rem;
+      width: calc(100% + 3.5rem);
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      font-size: 1.3rem;
+      clip-path: polygon(1% 0%, 100% 0%, 99% 100%, 0% 100%);
+   }
+   .postTitle-wrap {
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
    }
    a {
       color: #000;
@@ -34,9 +35,8 @@ const PostCSS = Styled.article`
       text-decoration: underline;
       color: blue;
    }
-   .read-more:hover,
-   .read-more:active {
-      color: lightblue;
+   .read-more:hover {
+      color: #001489;
    }
 `
 
@@ -66,7 +66,9 @@ const Listing = () => {
          {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostCSS key={node.frontmatter.slug}>
                <Link to={`/posts${node.frontmatter.slug}`}>
-                  <h2>{node.frontmatter.title}</h2>
+                  <div className="postTitle-wrap">
+                     <h2>{node.frontmatter.title}</h2>
+                  </div>
                </Link>
                <p>{node.frontmatter.date}</p>
                <p>{node.excerpt}</p>
