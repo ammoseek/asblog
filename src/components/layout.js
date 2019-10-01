@@ -13,7 +13,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Archive from './archive'
+import SiteLinks from './sitelinks'
 import './layout.css'
+import SocialIcons from './social'
 
 const BodyCSS = Styled.div`
    background-color: #E8E4D3;
@@ -45,13 +47,6 @@ const Layout = ({ children }) => {
                title
             }
          }
-         file(relativePath: { regex: "/bg/" }) {
-            childImageSharp {
-               fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-               }
-            }
-         }
       }
    `)
 
@@ -60,7 +55,11 @@ const Layout = ({ children }) => {
          <Header siteTitle={data.site.siteMetadata.title} />
          <MainLayout>
             <div>{children}</div>
+            <div className="sidebar">
             <Archive />
+            <SiteLinks />
+            <SocialIcons />
+            </div>
          </MainLayout>
 
          <FooterCSS>

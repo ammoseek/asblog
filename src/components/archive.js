@@ -12,6 +12,7 @@ import Styled from "styled-components"
 const ListCSS = Styled.ul`
    padding: 0;
    margin: 0;
+   margin-left: 0.7rem;
    list-style: none;
    li {
       margin-bottom: 0.5rem;

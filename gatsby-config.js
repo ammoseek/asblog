@@ -3,7 +3,29 @@ module.exports = {
       title: `AmmoSeek Blog`,
       description: `Welcome to the new AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
       author: `@gatsbyjs`,
-      siteUrl: 'http://blog.ammoseek.com/'
+      siteUrl: 'http://blog.ammoseek.com/',
+      social: [
+         {
+           name: `Twitter`,
+           url: `https://twitter.com/ammoseek`,
+           icon: `./images/twitter.svg`
+         },
+         {
+           name: `Facebook`,
+           url: `https://facebook.com/ammoseek`,
+           icon: `./images/facebook.svg`
+         },
+       ],
+      siteLinks: [
+         {
+            name: 'Gun Talk',
+            url: 'https://guntalk.com'
+         },
+         {
+            name: 'Ammoland',
+            url: 'https://ammoland.com'
+         },
+      ]
    },
    plugins: [
       `gatsby-plugin-react-helmet`,
