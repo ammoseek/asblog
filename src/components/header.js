@@ -58,6 +58,29 @@ const HeaderContainer = Styled.div`
       padding: 0.4rem;
       transition: all 0.3s;
    }
+   @keyframes findwhat {
+      0% {
+         content: 'AMMO';
+         color: yellow;
+      }
+      30% {
+         content: 'MAGS';
+         color: pink;
+      }
+      60% {
+         content: 'GUNS';
+         color: cyan;
+      }
+      80% {
+         content: 'RELOADING';
+         color: lightgreen;
+      }
+   }
+   .nav-item .find::after {
+      content: 'AMMO';
+      color: yellow;
+      animation: findwhat 5s infinite;
+   }
 `
 
 const LogoCSS = Styled.div`
@@ -90,7 +113,11 @@ const Header = ({ siteTitle }) => (
                </Link>
             </h1>
             <ul>
-               <li><a className="nav-item" type="buttom" href="https://ammoseek.com/">FIND AMMO at AmmoSeek.com</a></li>
+               <li>
+                  <a className="nav-item" type="buttom" href="https://ammoseek.com/">
+                     <span className="find">FIND </span> at AmmoSeek.com
+                  </a>
+               </li>
             </ul>
          </HeaderContainer>
       </header>
