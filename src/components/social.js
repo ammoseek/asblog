@@ -5,7 +5,7 @@ import Styled from 'styled-components'
 const SocialList = Styled.ul`
    margin: 0;
    margin-top: 2rem;
-   margin-bottom: 1rem;
+   margin-bottom: 1.5rem;
    list-style: none;
    text-align: center;
 
