@@ -36,6 +36,9 @@ const HeaderContainer = Styled.div`
 
    li {
       margin: 0;
+      margin-right: 0.6rem;
+      box-shadow: 2px 2px 4px rgba(185, 151, 151, 0.73);
+      border-radius: 6px;
    }
 
    .nav-item {
@@ -45,7 +48,6 @@ const HeaderContainer = Styled.div`
       padding: 0.3rem;
       text-decoration: none;
       white-space: nowrap;
-      box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.34);
       height: 60px;
       width: 170px;
       transition: all 0.3s;
@@ -53,10 +55,8 @@ const HeaderContainer = Styled.div`
    }
    .nav-item:hover,
    .nav-item:active {
-      //background-color: gray;
       color: #3a3a3a;
       cursor: pointer;
-      //box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
       padding: 0.4rem;
       transition: all 0.3s;
    }
