@@ -36,9 +36,9 @@ const HeaderContainer = Styled.div`
 
    li {
       margin: 0;
-      margin-right: 0.6rem;
       box-shadow: 2px 2px 4px rgba(185, 151, 151, 0.73);
       border-radius: 6px;
+      width: 170px;
    }
 
    .nav-item {
