@@ -39,15 +39,17 @@ const HeaderContainer = Styled.div`
    }
 
    .nav-item {
+      display: inline-block;
       background-color: #D31918;
       color: black;
       padding: 0.3rem;
-      border-radius: 5px;
       text-decoration: none;
       white-space: nowrap;
       box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.34);
-      height: 25px;
+      height: 60px;
+      width: 170px;
       transition: all 0.3s;
+      border-radius: 6px;
    }
    .nav-item:hover,
    .nav-item:active {
@@ -58,7 +60,7 @@ const HeaderContainer = Styled.div`
       padding: 0.4rem;
       transition: all 0.3s;
    }
-   @keyframes findwhat {
+   @keyframes findwhatcolor {
       0% {
          content: 'AMMO';
          color: yellow;
@@ -76,10 +78,38 @@ const HeaderContainer = Styled.div`
          color: lightgreen;
       }
    }
-   .nav-item .find::after {
+   @keyframes findwhat {
+      0% {
+         content: 'AMMO';
+      }
+      30% {
+         content: 'MAGS';
+      }
+      60% {
+         content: 'GUNS';
+      }
+      80% {
+         content: 'RELOADING';
+      }
+   }
+   .nav-item .find {
+      text-align: left;
+   }
+   .nav-item .type::after {
       content: 'AMMO';
-      color: yellow;
-      animation: findwhat 5s infinite;
+      animation: findwhat 10s infinite;
+      width: 170px;
+      text-align: center;
+   }
+   .nav-item:hover .type::after {
+      animation: findwhatcolor 0.3s infinite;
+   }
+   .nav-item .at {
+      display: inline-block;
+      font-size: 0.8em;
+      width: 170px;
+      text-align: center;
+      font-style: italic;
    }
 `
 
@@ -115,7 +145,8 @@ const Header = ({ siteTitle }) => (
             <ul>
                <li>
                   <a className="nav-item" type="buttom" href="https://ammoseek.com/">
-                     <span className="find">FIND </span> at AmmoSeek.com
+                     <span className="find">FIND</span> <span className="type"></span><br />
+                     <span className="at">at AmmoSeek.com</span>
                   </a>
                </li>
             </ul>
