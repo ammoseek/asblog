@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Styled from 'styled-components'
 
 const PostCSS = Styled.article`
@@ -50,6 +51,16 @@ const PostCSS = Styled.article`
    .read-more:hover {
       color: #001489;
    }
+   img {
+      float: left;
+   }
+   .readMoreWrapper {
+      text-align: right;
+   }
+   .listingImage {
+      border-radius: 7px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+   }
 `
 
 const Listing = () => {
@@ -61,11 +72,18 @@ const Listing = () => {
          ) {
             edges {
                node {
-                  excerpt
+                  excerpt(pruneLength: 240)
                   frontmatter {
                      date(formatString: "MMMM DD, YYYY")
                      title
                      slug
+                     featuredImage {
+                        childImageSharp {
+                           fixed(width: 180) {
+                              ...GatsbyImageSharpFixed_tracedSVG
+                           }
+                        }
+                     }
                   }
                }
             }
@@ -83,13 +101,15 @@ const Listing = () => {
                   </div>
                </Link>
                <p className="date">{node.frontmatter.date}</p>
-               <p>{node.excerpt}</p>
-               <Link
-                  className="read-more"
-                  to={`/posts${node.frontmatter.slug}`}
-               >
-                  Read More...
-               </Link>
+               <div className="postContentContainer">
+                  <Img className="listingImage" fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
+                  <p className="postContent">{node.excerpt}</p>
+               </div>
+               <div className="readMoreWrapper">
+                  <Link className="read-more" to={`/posts${node.frontmatter.slug}`}>
+                     Read More...
+                  </Link>
+               </div>
             </PostCSS>
          ))}
       </>

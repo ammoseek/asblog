@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Layout from './layout'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Styled from 'styled-components'
 
 // Static Query
@@ -10,10 +11,30 @@ import Styled from 'styled-components'
 // Must be used on pages
 
 const PostContentDiv = Styled.div`
-   background-color: lightgray;
+   background-color: white;
    padding: 1rem;
    border-radius: 5px;
    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+
+   .postImage {
+      border-radius: 7px;
+      box-shadow: 5px 5px 10px #777;
+      max-height: 200px;
+   }
+
+   h1 {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      text-align: center;
+      color: #a60000;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+   }
+   h4 {
+      text-align: center;
+      font-size: small;
+      font-style: italic;
+      font-weight: 100;
+   }
 `
 
 export default class postLayout extends Component {
@@ -22,7 +43,9 @@ export default class postLayout extends Component {
       return (
          <Layout>
             <PostContentDiv>
+               <Img className="postImage" fluid={markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
                <h1>{markdownRemark.frontmatter.title}</h1>
+               <h4>{markdownRemark.frontmatter.date}</h4>
                <div
                   dangerouslySetInnerHTML={{
                      __html: markdownRemark.html,
@@ -40,8 +63,15 @@ export const query = graphql`
          html
          frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             slug
+            featuredImage {
+               childImageSharp {
+                  fluid(maxWidth: 650) {
+                     ...GatsbyImageSharpFluid_tracedSVG
+                  }
+               }
+            }
          }
       }
    }
