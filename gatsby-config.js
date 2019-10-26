@@ -30,13 +30,7 @@ module.exports = {
    plugins: [
       `gatsby-plugin-react-helmet`,
       'gatsby-plugin-sitemap',
-      {
-         resolve: `gatsby-plugin-breadcrumb`,
-         options: {
-            useAutoGen: true,
-            autoGenHomeLabel: `Home`
-         }
-      },
+      'gatsby-plugin-transition-link',
       {
          resolve: `gatsby-source-filesystem`,
          options: {

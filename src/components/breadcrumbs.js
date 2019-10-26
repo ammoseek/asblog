@@ -1,6 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const BreadcrumbDiv = Styled.div`
    display: inline-block;
@@ -66,8 +66,8 @@ const BreadcrumbDiv = Styled.div`
 const Breadcrumbs = ({ title, slug }) => {
    return (
       <BreadcrumbDiv>
-	      <Link to="/">Home</Link>
-	      <Link className="active" to={`/posts${slug}`}>{title}</Link>
+	      <AniLink fade to="/">Home</AniLink>
+	      <AniLink fade className="active" to={`/posts${slug}`}>{title}</AniLink>
       </BreadcrumbDiv>
    )
 }

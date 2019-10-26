@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PropTypes from 'prop-types'
 import React from 'react'
 import Styled from 'styled-components'
@@ -165,7 +165,7 @@ const Header = ({ siteTitle }) => (
       <header>
          <HeaderContainer>
             <h1 style={{ margin: 0 }}>
-               <Link
+               <AniLink fade
                   to="/"
                   style={{
                      color: `white`,
@@ -176,7 +176,7 @@ const Header = ({ siteTitle }) => (
                      <img src={logoImg} alt="AmmoSeek Logo" />
                      <span>AmmoSeek Blog</span>
                   </LogoCSS>
-               </Link>
+               </AniLink>
             </h1>
             <ul>
                <li>

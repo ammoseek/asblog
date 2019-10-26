@@ -6,7 +6,8 @@
  */
 
 import React from 'react'
-import { useStaticQuery, graphql, Link} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Styled from "styled-components"
 
 const ListCSS = Styled.ul`
@@ -57,9 +58,9 @@ const Archive = () => {
             <ListCSS>
             {data.allMarkdownRemark.edges.map( edge => (
                <li key={edge.node.frontmatter.slug}>
-                  <Link to={`/posts${edge.node.frontmatter.slug}`}>
+                  <AniLink fade duration={1.2} to={`/posts${edge.node.frontmatter.slug}`}>
                      {edge.node.frontmatter.title}
-                  </Link>
+                  </AniLink>
                </li>
             ))}
             </ListCSS>

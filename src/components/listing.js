@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from 'gatsby-image'
 import Styled from 'styled-components'
 
@@ -95,20 +96,20 @@ const Listing = () => {
       <>
          {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostCSS key={node.frontmatter.slug}>
-               <Link to={`/posts${node.frontmatter.slug}`}>
+               <AniLink fade to={`/posts${node.frontmatter.slug}`}>
                   <div className="postTitle-wrap">
                      <h2>{node.frontmatter.title}</h2>
                   </div>
-               </Link>
+               </AniLink>
                <p className="date">{node.frontmatter.date}</p>
                <div className="postContentContainer">
                   <Img className="listingImage" fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
                   <p className="postContent">{node.excerpt}</p>
                </div>
                <div className="readMoreWrapper">
-                  <Link className="read-more" to={`/posts${node.frontmatter.slug}`}>
+                  <AniLink fade className="read-more" to={`/posts${node.frontmatter.slug}`}>
                      Read More...
-                  </Link>
+                  </AniLink>
                </div>
             </PostCSS>
          ))}
