@@ -1,7 +1,7 @@
 module.exports = {
    siteMetadata: {
-      title: `AmmoSeek Blog`,
-      description: `Welcome to the new AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
+      title: `Your ammo for finding ammunition, guns, mags, and reloading - AmmoSeek Blog`,
+      description: `Welcome to the AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
       author: `@ammoseek`,
       siteUrl: 'https://blog.ammoseek.com',
       social: [
