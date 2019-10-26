@@ -2,8 +2,8 @@ module.exports = {
    siteMetadata: {
       title: `AmmoSeek Blog`,
       description: `Welcome to the new AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
-      author: `@gatsbyjs`,
-      siteUrl: 'http://blog.ammoseek.com/',
+      author: `@ammoseek`,
+      siteUrl: 'http://blog.ammoseek.com',
       social: [
          {
            name: `Twitter`,
@@ -30,6 +30,13 @@ module.exports = {
    plugins: [
       `gatsby-plugin-react-helmet`,
       'gatsby-plugin-sitemap',
+      {
+         resolve: `gatsby-plugin-breadcrumb`,
+         options: {
+            useAutoGen: true,
+            autoGenHomeLabel: `Home`
+         }
+      },
       {
          resolve: `gatsby-source-filesystem`,
          options: {

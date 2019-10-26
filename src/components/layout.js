@@ -9,7 +9,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-// import Img from 'gatsby-image'
 
 import Header from './header'
 import Archive from './archive'

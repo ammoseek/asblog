@@ -3,6 +3,8 @@ import Layout from './layout'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Styled from 'styled-components'
+import SEO from './seo'
+import Breadcrumbs from './breadcrumbs'
 
 // Static Query
 // used anywhere, doesn't accept variables/params, can't use context
@@ -42,6 +44,11 @@ export default class postLayout extends Component {
       const { markdownRemark } = this.props.data
       return (
          <Layout>
+            <SEO title={ markdownRemark.frontmatter.title } />
+            <Breadcrumbs
+               title={ markdownRemark.frontmatter.title}
+               slug={ markdownRemark.frontmatter.slug }
+            />
             <PostContentDiv>
                <Img className="postImage" fluid={markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
                <h1>{markdownRemark.frontmatter.title}</h1>
