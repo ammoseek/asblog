@@ -103,7 +103,7 @@ const Listing = () => {
                </AniLink>
                <p className="date">{node.frontmatter.date}</p>
                <div className="postContentContainer">
-                  <Img className="listingImage" fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
+                  <Img alt={`${node.frontmatter.title} Thumbnail`} className="listingImage" fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
                   <p className="postContent">{node.excerpt}</p>
                </div>
                <div className="readMoreWrapper">

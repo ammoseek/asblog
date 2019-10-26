@@ -50,7 +50,7 @@ export default class postLayout extends Component {
                slug={ markdownRemark.frontmatter.slug }
             />
             <PostContentDiv>
-               <Img className="postImage" fluid={markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
+               <Img alt={`${markdownRemark.frontmatter.title} Image`} className="postImage" fluid={markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
                <h1>{markdownRemark.frontmatter.title}</h1>
                <h4>{markdownRemark.frontmatter.date}</h4>
                <div
