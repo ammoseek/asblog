@@ -3,7 +3,7 @@ module.exports = {
       title: `AmmoSeek Blog`,
       description: `Welcome to the new AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
       author: `@ammoseek`,
-      siteUrl: 'http://blog.ammoseek.com',
+      siteUrl: 'https://blog.ammoseek.com',
       social: [
          {
            name: `Twitter`,
@@ -30,6 +30,7 @@ module.exports = {
    plugins: [
       `gatsby-plugin-react-helmet`,
       'gatsby-plugin-sitemap',
+      'gatsby-plugin-robots-txt',
       'gatsby-plugin-transition-link',
       {
          resolve: `gatsby-source-filesystem`,
