@@ -30,7 +30,7 @@ const HeaderContainer = Styled.div`
    grid-template-columns: 3fr 1fr;
    align-items: center;
 
-   @media (max-width:720px) {
+   @media (max-width:680px) {
       grid-template-columns: 1fr;
       height: 200px;
       text-align:center;
@@ -54,30 +54,38 @@ const HeaderContainer = Styled.div`
 
    li {
       margin: 0;
-      box-shadow: -3px 3px 4px 1px #9d9a9a;
       border-radius: 6px;
-      width: 170px;
+      width: 180px;
    }
 
    .nav-item {
       display: inline-block;
-      background-image: linear-gradient(#ffb400, #D31918);
-      color: black;
+      font-family: Open Sans, sans-serif;
+      font-weight: bolder;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.41);
+      background-image: linear-gradient(#ff1f1e, #a21413);
       padding: 0.3rem;
+      color: black;
+      padding-left: 0.8rem;
       text-decoration: none;
+      text-align: left;
       white-space: nowrap;
       height: 60px;
-      width: 170px;
-      transition: all 0.3s;
-      border-radius: 6px;
+      width: 180px;
+      transition: all 0.15s ease;;
+      border-radius: 30px;
    }
-   .nav-item:hover,
-   .nav-item:active {
+   .nav-item:hover {
       color: #3a3a3a;
       cursor: pointer;
-      padding: 0.4rem;
-      transition: all 0.3s;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+      transition: all 0.15s ease;
    }
+   .nav-item:active {
+      box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+   }
+
    @keyframes findwhatcolor {
       0% {
          content: 'AMMO';
@@ -128,6 +136,7 @@ const HeaderContainer = Styled.div`
       width: 170px;
       text-align: center;
       font-style: italic;
+      font-weight: normal;
    }
 `
 
