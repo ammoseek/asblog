@@ -5,7 +5,7 @@ date: 2018-10-16
 featuredImage: './shotgun-loading1.jpg'
 ---
 
-With the upcoming release of the new AmmoSeek.com web site, we are also going to be maintaining a blog. Yes, a blog. Just like everyone else in the world, AmmoSeek will now have a blog. It is here we'll post just about anything we find interesting from the humorous to the serios.  Mostly we just want to have a place where we can provide AmmoSeek users with information about the latest and greatest items related to the site.  We'll have tips for searching, feature updates, links to friends and more.
+With the upcoming release of the new AmmoSeek.com web site, we are also going to be maintaining a blog. Yes, a blog. Just like everyone else in the world, AmmoSeek will now have a blog. It is here we'll post just about anything we find interesting from the humorous to the serious.  Mostly we just want to have a place where we can provide AmmoSeek users with information about the latest and greatest items related to the site.  We'll have tips for searching, feature updates, links to friends and more.
 
 In this first post we are just going to outline the world of AmmoSeek in the Fall of 2019. So here we go:
 
