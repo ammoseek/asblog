@@ -33,6 +33,13 @@ module.exports = {
       'gatsby-plugin-robots-txt',
       'gatsby-plugin-transition-link',
       {
+         resolve: `gatsby-plugin-google-analytics`,
+         options: {
+            trackingId: "UA-5694615-14",
+            head: true
+         }
+      },
+      {
          resolve: `gatsby-source-filesystem`,
          options: {
             name: `images`,
