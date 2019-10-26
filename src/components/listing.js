@@ -28,8 +28,8 @@ const PostCSS = Styled.article`
       filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
    }
    h2:hover {
-      padding-top: 0.7rem;
-      padding-bottom: 0.7rem;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
       transition: all 0.3s;
       color: #3a3a3a;
    }
