@@ -63,6 +63,21 @@ module.exports = {
                      maxWidth: 970,
                   },
                },
+               {
+                  resolve: "gatsby-remark-embed-video",
+                  options: {
+                    width: 580,
+                    related: false,
+                    noIframeBorder: true,
+                    urlOverrides: [
+                      {
+                        id: 'youtube',
+                        embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
+                      }
+                    ]
+                  }
+               },
+               'gatsby-remark-responsive-iframe'
             ],
          },
       },
