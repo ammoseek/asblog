@@ -7,6 +7,11 @@ module.exports = {
       siteUrl: 'https://blog.ammoseek.com',
       social: [
          {
+            name: `RSS Feed`,
+            url: `https://blog.ammoseek.com/rss.xml`,
+            icon: `./images/feed-icon.svg`
+         },
+         {
            name: `Twitter`,
            url: `https://twitter.com/ammoseek`,
            icon: `./images/twitter.svg`
@@ -15,7 +20,7 @@ module.exports = {
            name: `Facebook`,
            url: `https://facebook.com/ammoseek`,
            icon: `./images/facebook.svg`
-         },
+         }
        ],
       siteLinks: [
          {

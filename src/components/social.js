@@ -46,6 +46,9 @@ const SocialIcons = () => {
          facebookIcon: file(relativePath: { regex: "/facebook.svg/" }) {
             publicURL
          }
+         rssIcon: file(relativePath: { regex: "/feed-icon.svg/" }) {
+            publicURL
+         }
       }
    `)
 
@@ -58,9 +61,7 @@ const SocialIcons = () => {
                      <a href={share.url}>
                         <img
                            src={
-                              share.name === 'Twitter' ?
-                              data.twitterIcon.publicURL :
-                              data.facebookIcon.publicURL
+                              share.name === 'Twitter' ? data.twitterIcon.publicURL : share.name === 'Facebook' ? data.facebookIcon.publicURL : data.rssIcon.publicURL
                            }
                            alt={share.name}/>
                      </a>
