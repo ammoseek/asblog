@@ -68,7 +68,7 @@ const Listing = () => {
    const data = useStaticQuery(graphql`
       query {
          allMarkdownRemark(
-            limit: 10
+            limit: 5
             sort: { order: DESC, fields: [frontmatter___date] }
          ) {
             edges {
