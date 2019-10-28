@@ -60,7 +60,7 @@ module.exports = {
                      return allMarkdownRemark.edges.map(edge => {
                         return Object.assign({}, edge.node.frontmatter, {
                            description: `
-                              <img align="left" hspace="8" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />
+                              <img align="left" hspace="8" width="200" height="125" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />
                               ${edge.node.excerpt}`,
                            date: edge.node.frontmatter.date,
                            url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
