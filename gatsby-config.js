@@ -59,9 +59,12 @@ module.exports = {
                   serialize: ({ query: { site, allMarkdownRemark } }) => {
                      return allMarkdownRemark.edges.map(edge => {
                         return Object.assign({}, edge.node.frontmatter, {
-                           description: edge.node.excerpt,
+                           description: `<![CDATA[
+                              <img align="left" hspace="8" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />]]>
+                              ${edge.node.excerpt}`,
                            date: edge.node.frontmatter.date,
                            url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
+                           image_url: site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL,
                            guid: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
                            custom_elements: [{ "content:encoded": edge.node.html }],
                         })
@@ -80,6 +83,9 @@ module.exports = {
                                     title
                                     date
                                     slug
+                                    featuredImage {
+                                       publicURL
+                                    }
                                  }
                               }
                            }
