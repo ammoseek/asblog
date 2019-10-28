@@ -59,8 +59,8 @@ module.exports = {
                   serialize: ({ query: { site, allMarkdownRemark } }) => {
                      return allMarkdownRemark.edges.map(edge => {
                         return Object.assign({}, edge.node.frontmatter, {
-                           description: `<![CDATA[
-                              <img align="left" hspace="8" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />]]>
+                           description: `
+                              <img align="left" hspace="8" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />
                               ${edge.node.excerpt}`,
                            date: edge.node.frontmatter.date,
                            url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
