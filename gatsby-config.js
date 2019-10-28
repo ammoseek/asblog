@@ -63,9 +63,8 @@ module.exports = {
                               <img align="left" hspace="8" width="200" height="125" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />
                               ${edge.node.excerpt}`,
                            date: edge.node.frontmatter.date,
-                           url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
-                           image_url: site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL,
-                           guid: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
+                           url: site.siteMetadata.siteUrl + '/posts/' + edge.node.frontmatter.slug,
+                           guid: site.siteMetadata.siteUrl + '/posts/' + edge.node.frontmatter.slug,
                            custom_elements: [{ "content:encoded": edge.node.html }],
                         })
                      })
