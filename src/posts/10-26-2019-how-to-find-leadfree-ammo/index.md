@@ -1,6 +1,6 @@
 ---
 title: How to find Lead-Free Ammo
-slug: /find-lead-free-ammunition
+slug: find-lead-free-ammunition
 date: 2019-10-26
 featuredImage: './silver-win-bullet.jpg'
 ---

@@ -67,7 +67,7 @@ const Breadcrumbs = ({ title, slug }) => {
    return (
       <BreadcrumbDiv>
 	      <AniLink fade to="/">Home</AniLink>
-	      <AniLink fade className="active" to={`/posts${slug}`}>{title}</AniLink>
+	      <AniLink fade className="active" to={`/posts/${slug}`}>{title}</AniLink>
       </BreadcrumbDiv>
    )
 }

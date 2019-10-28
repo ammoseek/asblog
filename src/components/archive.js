@@ -58,7 +58,7 @@ const Archive = () => {
             <ListCSS>
             {data.allMarkdownRemark.edges.map( edge => (
                <li key={edge.node.frontmatter.slug}>
-                  <AniLink fade duration={1.2} to={`/posts${edge.node.frontmatter.slug}`}>
+                  <AniLink fade duration={1.2} to={`/posts/${edge.node.frontmatter.slug}`}>
                      {edge.node.frontmatter.title}
                   </AniLink>
                </li>

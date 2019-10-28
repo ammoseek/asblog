@@ -1,6 +1,6 @@
 ---
 title: Welcome to The AmmoSeek Blog
-slug: /welcome-to-the-ammoseek-blog
+slug: welcome-to-the-ammoseek-blog
 date: 2018-10-16
 featuredImage: './shotgun-loading1.jpg'
 ---

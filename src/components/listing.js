@@ -96,7 +96,7 @@ const Listing = () => {
       <>
          {data.allMarkdownRemark.edges.map(({ node }) => (
             <PostCSS key={node.frontmatter.slug}>
-               <AniLink fade to={`/posts${node.frontmatter.slug}`}>
+               <AniLink fade to={`/posts/${node.frontmatter.slug}`}>
                   <div className="postTitle-wrap">
                      <h2>{node.frontmatter.title}</h2>
                   </div>
@@ -107,7 +107,7 @@ const Listing = () => {
                   <p className="postContent">{node.excerpt}</p>
                </div>
                <div className="readMoreWrapper">
-                  <AniLink fade className="read-more" to={`/posts${node.frontmatter.slug}`}>
+                  <AniLink fade className="read-more" to={`/posts/${node.frontmatter.slug}`}>
                      Read More...
                   </AniLink>
                </div>

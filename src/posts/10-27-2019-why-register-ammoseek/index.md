@@ -1,6 +1,6 @@
 ---
 title: Why Register for an AmmoSeek Account?
-slug: /why-register-ammoseek-account
+slug: why-register-ammoseek-account
 date: 2019-10-27
 featuredImage: './signing-paper.jpg'
 ---

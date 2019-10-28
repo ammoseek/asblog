@@ -1,6 +1,6 @@
 ---
 title: Dropping Internet Explorer
-slug: /dropping-internet-explorer
+slug: dropping-internet-explorer
 date: 2019-10-25
 featuredImage: './color-monitor-screen.jpg'
 ---
