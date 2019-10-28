@@ -44,7 +44,9 @@ export default class postLayout extends Component {
       const { markdownRemark } = this.props.data
       return (
          <Layout>
-            <SEO title={ markdownRemark.frontmatter.title } />
+            <SEO title={ markdownRemark.frontmatter.title }
+               image={ markdownRemark.frontmatter.featuredImage.publicURL }
+             />
             <Breadcrumbs
                title={ markdownRemark.frontmatter.title}
                slug={ markdownRemark.frontmatter.slug }
@@ -73,6 +75,7 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             featuredImage {
+               publicURL
                childImageSharp {
                   fluid(maxWidth: 650) {
                      ...GatsbyImageSharpFluid_tracedSVG
