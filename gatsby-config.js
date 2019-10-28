@@ -3,6 +3,7 @@ module.exports = {
       title: `Find ammo, guns, mags, and reloading - AmmoSeek Blog`,
       description: `Welcome to the AmmoSeek Blog. Here is where we'll keep you up to date with all the news, tips, tricks, features, offers, and more!`,
       author: `@ammoseek`,
+      email: `admin@ammoseek.com`,
       siteUrl: 'https://blog.ammoseek.com',
       social: [
          {
@@ -29,9 +30,67 @@ module.exports = {
    },
    plugins: [
       `gatsby-plugin-react-helmet`,
+      {
+         resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+         options: {
+            siteUrl: 'https://blog.ammoseek.com',
+         }
+      },
       'gatsby-plugin-sitemap',
       'gatsby-plugin-robots-txt',
       'gatsby-plugin-transition-link',
+      {
+         resolve: 'gatsby-plugin-feed',
+         options: {
+            query: `
+               {
+                  site {
+                     siteMetadata {
+                        title
+                        description
+                        siteUrl
+                        site_url: siteUrl
+                     }
+                  }
+               }
+            `,
+            feeds: [
+               {
+                  serialize: ({ query: { site, allMarkdownRemark } }) => {
+                     return allMarkdownRemark.edges.map(edge => {
+                        return Object.assign({}, edge.node.frontmatter, {
+                           description: edge.node.excerpt,
+                           date: edge.node.frontmatter.date,
+                           url: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
+                           guid: site.siteMetadata.siteUrl + edge.node.frontmatter.slug,
+                           custom_elements: [{ "content:encoded": edge.node.html }],
+                        })
+                     })
+                  },
+                  query: `
+                     {
+                        allMarkdownRemark(
+                           sort: { order: DESC, fields: [frontmatter___date] },
+                        ) {
+                           edges {
+                              node {
+                                 excerpt
+                                 html
+                                 frontmatter {
+                                    title
+                                    date
+                                    slug
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  `,
+                  output: '/rss.xml',
+               }
+            ]
+         }
+      },
       {
          resolve: `gatsby-plugin-google-analytics`,
          options: {
