@@ -45,7 +45,7 @@ export default class postLayout extends Component {
       return (
          <Layout>
             <SEO title={ markdownRemark.frontmatter.title }
-               image={ markdownRemark.frontmatter.featuredImage.publicURL }
+               image={ markdownRemark.frontmatter.featuredImage.childImageSharp.resolutions.src }
              />
             <Breadcrumbs
                title={ markdownRemark.frontmatter.title}
@@ -75,10 +75,12 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             featuredImage {
-               publicURL
                childImageSharp {
                   fluid(maxWidth: 650) {
                      ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                  resolutions(width: 1200, height: 630) {
+                     src
                   }
                }
             }
