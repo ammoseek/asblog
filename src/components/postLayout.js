@@ -46,6 +46,7 @@ export default class postLayout extends Component {
          <Layout>
             <SEO title={ markdownRemark.frontmatter.title }
                image={ markdownRemark.frontmatter.featuredImage.childImageSharp.resolutions.src }
+               description={ markdownRemark.excerpt }
              />
             <Breadcrumbs
                title={ markdownRemark.frontmatter.title}
@@ -70,6 +71,7 @@ export const query = graphql`
    query PostQuery($slug: String!) {
       markdownRemark(frontmatter: { slug: { eq: $slug } }) {
          html
+         excerpt
          frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
