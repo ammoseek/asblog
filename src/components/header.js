@@ -73,7 +73,7 @@ const HeaderContainer = Styled.div`
       white-space: nowrap;
       height: 60px;
       width: 180px;
-      transition: all 0.15s ease;;
+      transition: all 0.15s ease;
       border-radius: 30px;
    }
    .nav-item:hover {

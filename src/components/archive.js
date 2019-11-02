@@ -35,7 +35,7 @@ const ArchiveTitle = Styled.h3`
 const Archive = () => {
    const data = useStaticQuery(graphql`
       query {
-         allMarkdownRemark(limit:5, sort: {
+         allMarkdownRemark(limit:8, sort: {
             order: DESC,
             fields: [frontmatter___date]
           }) {

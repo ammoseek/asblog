@@ -1,5 +1,7 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { graphql } from 'gatsby'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from 'gatsby-image'
 import Styled from 'styled-components'
@@ -62,39 +64,49 @@ const PostCSS = Styled.article`
       border-radius: 7px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
    }
+   .pagination {
+      display: flex;
+      justify-content: space-between;
+   }
+`
+const PaginateDiv = Styled.div`
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 1.5rem;
+
+   a {
+      font-size: 0.8rem;
+      border-radius: 30px;
+      padding: 0.1rem 0.5rem;
+      text-decoration: none;
+      color: #c5c5c5;
+      font-family: Open Sans, sans-serif;
+      font-weight: bolder;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.41);
+      background-image: linear-gradient(#ff1f1e, #a21413);
+      transition: all 0.15s ease;
+   }
+
+   a:hover {
+      color: gray;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+      transition: all 0.15s ease;
+   }
+
+   a:active {
+      box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+   }
 `
 
-const Listing = () => {
-   const data = useStaticQuery(graphql`
-      query {
-         allMarkdownRemark(
-            limit: 10
-            sort: { order: DESC, fields: [frontmatter___date] }
-         ) {
-            edges {
-               node {
-                  excerpt(pruneLength: 240)
-                  frontmatter {
-                     date(formatString: "MMMM DD, YYYY")
-                     title
-                     slug
-                     featuredImage  {
-                        childImageSharp {
-                           fixed(width: 180) {
-                             ...GatsbyImageSharpFixed_tracedSVG
-                           }
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
-   `)
+const IndexPage = (props) => {
+   const { pageContext } = props;
+   const { previousPagePath, nextPagePath } = pageContext;
 
    return (
-      <>
-         {data.allMarkdownRemark.edges.map(({ node }) => (
+      <Layout>
+         <SEO title="Home" />
+         {props.data.posts.edges.map(({ node }) => (
             <PostCSS key={node.frontmatter.slug}>
                <AniLink fade to={`/posts/${node.frontmatter.slug}`}>
                   <div className="postTitle-wrap">
@@ -113,8 +125,41 @@ const Listing = () => {
                </div>
             </PostCSS>
          ))}
-      </>
+
+         <PaginateDiv>
+            {previousPagePath ? <AniLink fade to={previousPagePath}>&lt;&lt; Newer</AniLink> : null }
+            {nextPagePath ? <AniLink fade to={nextPagePath}>Older &gt;&gt;</AniLink> : null }
+         </PaginateDiv>
+      </Layout>
    )
 }
 
-export default Listing
+export const pageQuery = graphql`
+   query($skip: Int!, $limit: Int!) {
+      posts: allMarkdownRemark(
+         sort: { fields: [frontmatter___date], order: DESC }
+         skip: $skip
+         limit: $limit
+      ) {
+         edges {
+            node {
+               excerpt(pruneLength: 280)
+               frontmatter {
+                  date(formatString: "MMMM DD, YYYY")
+                  title
+                  slug
+                  featuredImage {
+                     childImageSharp {
+                        fixed(width: 180) {
+                           ...GatsbyImageSharpFixed_tracedSVG
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+`
+
+export default IndexPage

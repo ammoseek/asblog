@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Layout from './layout'
+import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Styled from 'styled-components'
-import SEO from './seo'
-import Breadcrumbs from './breadcrumbs'
+import SEO from '../components/seo'
+import Breadcrumbs from '../components/breadcrumbs'
 
 // Static Query
 // used anywhere, doesn't accept variables/params, can't use context
