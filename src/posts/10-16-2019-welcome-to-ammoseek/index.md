@@ -10,7 +10,7 @@ With the upcoming release of the new AmmoSeek.com web site, we are also going to
 In this first post we are just going to outline the world of AmmoSeek in the Fall of 2019. So here we go:
 
 The open (public) beta for the new AmmoSeek.com is available at:
-> https://beta.ammoseek.com/ <br />
+> [https://beta.ammoseek.com/](https://beta.ammoseek.com/?utm_source=blog.ammoseek.com&utm_medium=article) <br />
 > (NOTE: This may behind a login/pw if it is not available publicly yet!)
 
 The current (classic) AmmoSeek.com is still available at:

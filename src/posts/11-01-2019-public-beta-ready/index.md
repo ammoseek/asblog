@@ -24,12 +24,12 @@ Here are some of the new features to check out:
 - Sharing products from results
 - Probably more I'm forgetting at this time
 
-Enough preamble... check out and start using the [AmmoSeek Beta](https://beta.ammoseek.com) site at:
+Enough preamble... check out and start using the [AmmoSeek Beta](https://beta.ammoseek.com/?utm_source=blog.ammoseek.com&utm_medium=article) site at:
 
-https://beta.ammoseek.com
+[https://beta.ammoseek.com](https://beta.ammoseek.com/?utm_source=blog.ammoseek.com&utm_medium=article)
 
 Oh, one more thing. During our closed beta test we had purposefully left a known bug in place and asked folks to find it. It was never found, so now you have a chance to win some cold, hard cash ($100) if you find it and are the first to report it to us. Good luck!
 
-Please don't hesitate to let us know your thoughts about the new site. The [contact form](https://beta.ammoseek.com/contact) is the best place to do so. Positive comments are preferred and criticisms are especially preferred.
+Please don't hesitate to let us know your thoughts about the new site. The [contact form](https://beta.ammoseek.com/contact?utm_source=blog.ammoseek.com&utm_medium=article) is the best place to do so. Positive comments are preferred and criticisms are especially preferred.
 
 Thank you!
