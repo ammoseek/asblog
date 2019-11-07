@@ -1,5 +1,5 @@
 const path = require('path');
-const { paginate } = require('gatsby-awesome-pagination');
+const { paginate, createPagePerItem } = require('gatsby-awesome-pagination');
 
 exports.createPages = ({ graphql, actions }) => {
    const { createPage } = actions
@@ -34,15 +34,24 @@ exports.createPages = ({ graphql, actions }) => {
             pathPrefix: "/"
          })
 
-         results.data.allMarkdownRemark.edges.forEach(({ node }) => {
-            createPage({
-               path: `/posts/${node.frontmatter.slug}`,
-               component: path.resolve('./src/templates/postLayout.js'),
-               context: {
-                  slug: node.frontmatter.slug,
-               }
-            })
+         // results.data.allMarkdownRemark.edges.forEach(({ node }) => {
+         //    createPage({
+         //       path: `/posts/${node.frontmatter.slug}`,
+         //       component: path.resolve('./src/templates/postLayout.js'),
+         //       context: {
+         //          slug: node.frontmatter.slug,
+         //       }
+         //    })
+         // })
+
+         createPagePerItem({
+            createPage,
+            items: results.data.allMarkdownRemark.edges,
+            component: path.resolve('./src/templates/postLayout.js'),
+            itemToPath: 'node.frontmatter.slug',
+            itemToId: 'node.id'
          })
+
       })
       resolve()
    })
