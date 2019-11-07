@@ -61,9 +61,12 @@ const PaginateDiv = Styled.div`
    }
 
    a:hover {
-      color: #666;
+      color: #000;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 0px 0px 2px rgba(0, 0, 0, 0.5);
       transition: all 0.15s ease;
+   }
+   a:hover span {
+      color: yellow;
    }
 
    a:active {
