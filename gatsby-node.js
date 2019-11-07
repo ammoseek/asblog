@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
                   node {
                      id
                      frontmatter {
+                        title
                         slug
                      }
                   }
@@ -48,7 +49,14 @@ exports.createPages = ({ graphql, actions }) => {
             createPage,
             items: results.data.allMarkdownRemark.edges,
             component: path.resolve('./src/templates/postLayout.js'),
-            itemToPath: 'node.frontmatter.slug',
+            itemToPath: (item) => {
+               if (item) {
+                  return `/posts/${item.node.frontmatter.slug}`
+               }
+               else {
+                  return ''
+               }
+            },
             itemToId: 'node.id'
          })
 
