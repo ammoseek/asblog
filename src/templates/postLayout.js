@@ -49,7 +49,8 @@ const PaginateDiv = Styled.div`
    a {
       font-size: 0.8rem;
       border-radius: 30px;
-      padding: 0.1rem 0.5rem;
+      padding: 0.5rem 1rem;
+      margin-left: 0.3rem;
       text-decoration: none;
       color: #333;
       font-family: Open Sans, sans-serif;
@@ -58,6 +59,7 @@ const PaginateDiv = Styled.div`
       text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.41);
       background-image: linear-gradient(#ff1f1e, #a21413);
       transition: all 0.15s ease;
+
    }
 
    a:hover {
