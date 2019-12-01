@@ -20,7 +20,7 @@ Yes, AmmoSeek now comes in colors. In order to save/remember your color preferen
 
 Also, don't forget to [check out "Compact Results Mode"](/posts/ammoseek-feature-compact-results) for a much less sparse/spaced-out results page.
 
-Currently, we are offering 5 different themes and plan to add more in the future based upon user feedback. Here are some screeshots of each.
+Currently, we are offering 5 different themes and plan to add more in the future based upon user feedback. Here are some screenshots of each.
 
 The default "Gray Ogre" theme:
 ![Gray Ogre Color Theme](./graytheme-thumb.png)
