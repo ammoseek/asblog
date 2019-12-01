@@ -25,13 +25,11 @@ The new bill, proposed by Virginia State Senator L. Louise Lucas is Senate Bill 
 
 If read carefully, this does not make firearms training a felony though it may seem so on the surface by that first paragraph. The real concern is the 3rd paragraph above. An article at [The Truth About Guns](https://www.thetruthaboutguns.com/virginia-moves-to-criminalize-second-amendment-speech/) explains:
 
-```
-...most of that seems pointless as it would already seem
-to be covered by Virginia’s conspiracy
-law. I think number 3, however, is the real point here.
-```
+> "...most of that seems pointless as it would
+> already seem to be covered by Virginia’s conspiracy
+> law. I think number 3, however, is the real point here."
 
-Exactly. Who defines what "intimidating" means in this context? If applied liberally, it could mean just about anything, including the regular open carrying of a firearm. So, if you are headed to the range and decide to "march" your way into the front door you could be committing a felony in Virginia. Of course, that sounds ridiculous. It certainly is, but common-sense is already in short supply in east coast's latest California twin state.
+Exactly. Who defines what "intimidating" means in this context? If applied liberally, it could mean just about anything, including the regular open carrying of a firearm. So, if you are headed to the range and decide to "march" your way into the front door you could be committing a felony in Virginia. Of course, that sounds ridiculous. It certainly is, but common-sense is already in short supply in the east coast's latest California twin state.
 
 If you couple this with the [coming "Red Flag" laws](/posts/gun-rights-going-away-virginia), it all adds up to more infringement of your natural right of self defense through firearm ownership.
 
