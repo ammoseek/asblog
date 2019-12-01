@@ -26,7 +26,8 @@ The new bill, proposed by Virginia State Senator L. Louise Lucas is Senate Bill 
 If read carefully, this does not make firearms training a felony though it may seem so on the surface by that first paragraph. The real concern is the 3rd paragraph above. An article at [The Truth About Guns](https://www.thetruthaboutguns.com/virginia-moves-to-criminalize-second-amendment-speech/) explains:
 
 ```
-...most of that seems pointless as it would already seem to be covered by Virginia’s conspiracy
+...most of that seems pointless as it would already seem
+to be covered by Virginia’s conspiracy
 law. I think number 3, however, is the real point here.
 ```
 
