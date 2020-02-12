@@ -5,7 +5,7 @@ date: 2020-02-12
 featuredImage: './ammoseek-change-tire.jpg'
 ---
 
-Change is good, especially when you have flat or bald tires. The [classic AmmoSeek (still available here)](https://classic.ammoseek.com) lost the air in, and the tread on, its tires over the 10 years of its existence.
+Change is good, especially when you have flat or bald tires. The tires on the [classic AmmoSeek (still available here)](https://classic.ammoseek.com) lost both tread and air over the 10 years of its existence.
 
 **[The new AmmoSeek.com](https://ammoseek.com/)** is in place and some folks are unhappy with the change. During our open beta period, we had a survey that was open for a couple months as folks tried out the new site. Out of the people that tried the new site while it was in beta, 86.5% rated it at 7 or above (on a 1 to 10 scale). There were over 2000 respondents to the survey. But not everyone is pleased with the new site now that it is out of beta.
 
@@ -17,7 +17,7 @@ Here are the main reasons. The old (classic) AmmoSeek...
 
 1. was not "mobile-friendly"
 2. had an outdated general design/style
-3. was using old, insecure third-party code libraries
+3. was using old, insecure third-party code code
 
 We'll go through that list in detail below. Then, we'll present some new site features. Finally, we'll discuss our planned improvements moving forward. In other words, this is the **State of AmmoSeek in 2020**.
 
@@ -37,11 +37,9 @@ For comparison, have a look at the same results page on the new site:
 
 This is an improvement! No overlapping login button. No horizontal scrolling. No zoom required to click on things. You can see all the information about each results record. It also has a more modern design.
 
-The original AmmoSeek design occurred in 2009. At that time, the web was a very different place than it is today. That design never changed (in any significant way), until now, 11 years later. That design made heavy use of HTML tables for layout. Aside from being difficult on the developer, it is widely considered a bad practice (especially these days).
+The original AmmoSeek design occurred in 2009. At that time, the web was a very different place than it is today. That design never changed (in any significant way), until now, 11 years later. The new design ensures the site will still be operable with web browers today.
 
-Tables were created to show data, sort of like a spreadsheet, but for a web page. We do make use of tables for the results on non-mobile desktop browsers on the new site. However, we are no longer using tables for laying out the entire web page like we did for the classic site. There are other style and design decisions that made us due for a change, but using tables for layout was a major one.
-
-Finally, AmmoSeek needed to start using more up-to-date third party utilities and libraries. We still aren't "cutting edge" in this area on the new site, but we are getting there. The old libraries we made use of have known security problems that we had to work around. By using more modern libraries, there are less work-arounds required. Also, in many cases, the same code will execute more faster and efficiently. Faster code, faster user experience on the site. That is an ongoing goal for us as we work on improving the new site even more.
+Finally, AmmoSeek needed to start using more up-to-date code to fix potential security problems. In many cases, the more secure code will also execute more faster and efficiently. Faster code, faster user experience on the site. That is an ongoing goal for us as we work on improving the new site even more.
 
 ### New Features
 
