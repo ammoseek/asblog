@@ -5,11 +5,11 @@ date: 2020-02-12
 featuredImage: './ammoseek-change-tire.jpg'
 ---
 
-Change is good, especially when you have flat or bald tires. The tires on the [classic AmmoSeek (still available here)](https://classic.ammoseek.com) lost both tread and air over the 10 years of its existence.
+Change is good, especially when you have flat or bald tires. The tires on the [classic AmmoSeek (still available here)](https://classic.ammoseek.com) lost both tread and air over the 10+ years of its existence.
 
-**[The new AmmoSeek.com](https://ammoseek.com/)** is in place and some folks are unhappy with the change. During our open beta period, we had a survey that was open for a couple months as folks tried out the new site. Out of the people that tried the new site while it was in beta, 86.5% rated it at 7 or above (on a 1 to 10 scale). There were over 2000 respondents to the survey. But not everyone is pleased with the new site now that it is out of beta.
+**[The new AmmoSeek.com](https://ammoseek.com/)** is in place and some folks are unhappy with the change. During our open beta period, we had a survey that was open for a couple months as folks tried out the new site. Out of the people that tried the new site while it was in beta, 87% rated it at 7 or above (on a 1 to 10 scale). There were over 2000 respondents to the survey. But not everyone is pleased with the new site now that it is out of beta.
 
-Some of this is to be expected since being resistent to change is just human nature; however, we want to make sure it is clear why a change was necessary and our planned improvements going forward.
+Some of this is to be expected since being resistent to change is just human nature; however, we want to make sure it is clear why a change was necessary and map out our future improvements.
 
 ### Why change?
 
@@ -43,21 +43,21 @@ Finally, AmmoSeek needed to start using more up-to-date code to fix potential se
 
 ### New Features
 
-We've made a few posts discussing some of the new features we've implemented on the new site that does not exist on the old. Here they are:
+We've made a few posts discussing some of the new features we've implemented on the new site that do not exist on the old. Here they are:
 
 - [New Default: Search By Caliber](/posts/default-search-by-caliber) - The default search form is simpler, allowing you to type in *any* caliber, regardless of type, and quickly get results for the chosen caliber.
 - [Compact Results Mode](/posts/ammoseek-feature-compact-results) - On desktop browsers, toggle the results so they are less sparsely spaced, similar to the classic site format.
-- [Custom Color Themes](/posts/ammoseek-feature-color-themes) - Choose a new color theme for your preferred look/feel. We're taking requests for implementing additional color schemes here.
+- [Custom Color Themes](/posts/ammoseek-feature-color-themes) - Choose a new color theme for your preferred look/feel. If you have any specific suggestions for additional color themes, please let us know.
 
 In addition to the above, we haven't yet created articles about the following new features:
 
-- **Searching by a range of grains** is now available for types that have 'gains' as a valid attribute (non-shotgun ammo and bullet).
+- **Searching by a range of grains** is now available for types that have 'grains' as a valid attribute (non-shotgun ammo and bullets).
 - **Filtering caliber & mfg with auto-completion** in the search form selections, to quickly find your choice in the long long list of options.
 - Additional account setting customizations, such as **being able to choose and save your preferences** for compact results mode, default search form type, color themes, and more. Open your Account Settings from your user menu in the upper right part of the browser window. If you're logged in, it will display your name. If not, it will display "Sign In / Sign Up". As you might expect, updating your account settings requires a free registered account.
 
 ###Coming Soon
 
-Please stay tuned as we have plans to continue adding new features and improving the site going forward. In fact here are a few things we are planning based on the feedback we received thus far:
+Please stay tuned as we have plans to continue adding new features and improving the site. Here are a few things we are planning based on the feedback we received thus far:
 
 1. **A new modify search form for desktop browsers** that is more like the classic site - putting it right at the top of the results page instead of having it "hiding" as a side-menu popout.
 2. **A new modify search experience for mobile** - improving the current behavior of the modify search side-menu on mobile devices both in form and function.
