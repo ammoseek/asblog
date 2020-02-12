@@ -129,13 +129,14 @@ module.exports = {
                {
                   resolve: 'gatsby-remark-images',
                   options: {
-                     maxWidth: 970,
+                     maxWidth: 320,
                   },
                },
                {
                   resolve: "gatsby-remark-embed-video",
                   options: {
-                    width: 580,
+                    width: 320,
+                    maxWidth: 320,
                     related: false,
                     noIframeBorder: true,
                     urlOverrides: [
