@@ -25,4 +25,4 @@ As time goes by, all of the above will return to normal. We'll see supply return
 
 All of this being said, [AmmoSeek.com](https://ammoseek.com/) works 24/7 to make sure we have the most up to date information showing in our search results as possible.
 
-Stay Safe, stay healthy, and keep on shooting straight.
+Stay safe. Stay healthy, and keep on shooting straight.
