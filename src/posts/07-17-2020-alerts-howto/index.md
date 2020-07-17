@@ -37,7 +37,7 @@ In this case, we'll do a search for all 22LR Rimfire ammunition. Once on the res
 
 ![Save This Search](./save-search1.png)
 
-That action will bring up a window where you can immediately set an alert for the saved search. The window shows the current lowest price for the search for reference. Your chose price threshold must be below this price.
+That action will bring up a window where you can immediately set an alert for the saved search. The window shows the current lowest price for the search for reference. Your chosen price threshold must be below this price.
 
 ![Set Alert Immediately](./set-alert1.png)
 
@@ -57,7 +57,7 @@ This time we enter the term 'any' in the threshold input box and click the 'ACTI
 
 ### Managing Existing Alerts
 
-You can turn on/off alerting for individual saved searches from the 'Saved Searches & Alerts' settings. This can be accessed from a number of different places on the AmmoSeek site/app. The most direct path is through the user menu (once logged in) in the upper right corner of the desktop browser window (the user menu is available under the three-bars // hamburger menu on mobile). Selecting "Saved Searches" or "Manage Alerts" will bring up the "Saved Searches & Alerts" settings window.
+You can turn on/off alerting for individual saved searches from the 'Saved Searches & Alerts' settings. This can be accessed from a number of different places on the AmmoSeek site/app. The most direct path is through the user menu (once logged in) in the upper right corner of the desktop browser window (the user menu is available under the three-bars // hamburger menu on mobile devices). Selecting "Saved Searches" or "Manage Alerts" will bring up the "Saved Searches & Alerts" settings window.
 
 These settings allow you to manage everything with your saved searches and alerts, including: deleting saved searches, adjusting alert price thresholds, and as mentioned above, turning alerting on/off for specific saved searches.
 
