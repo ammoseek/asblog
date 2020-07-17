@@ -23,6 +23,6 @@ Obviously, there will be exceptions to the above. Consider yourself lucky if you
 
 As time goes by, all of the above will return to normal. We'll see supply return, demand go down, and prices will come back to previous levels. However, for now, we are all going to have to channel some extra patience and understanding as we get through this unprecedented period in our lives.
 
-All of this being said, [AmmoSeek.com](https://ammoseek.com/) works 24/7 to make sure we have the most up to date information showing in our search results as possible.
+All of this being said, [AmmoSeek.com](https://ammoseek.com/) works 24/7 to make sure we have the most up to date information showing in our search results as possible. We are doing the very best we can.
 
 Stay safe. Stay healthy, and keep on shooting straight.
