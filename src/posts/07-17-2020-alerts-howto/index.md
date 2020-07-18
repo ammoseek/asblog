@@ -65,7 +65,7 @@ These settings allow you to manage everything with your saved searches and alert
 
 - It is important to be as specific as possible with your saved search otherwise you run the risk of being alerted for unintended or incorrect products. For example, if you know you only want "new" condition ammo then you should specify that in your search.
 
-- If a search returns nothing found you are not required to enter 'any' for the threshold. You can still enter a cost-per-round price that matches your requirements. However, it is important to not enter a high or completely unreasonable price threshold. This will just take up space, never alert, and be a waste of system resources.
+- If a search returns nothing found you are not required to enter 'any' for the threshold; however, do not be tempted to enter a very large threshold. Entering a value of 'any' will ensure you get alerted much more quickly and efficiently.
 
 - Once a search is saved it cannot be edited. It must be deleted, then a new search performed and saved again.
 
