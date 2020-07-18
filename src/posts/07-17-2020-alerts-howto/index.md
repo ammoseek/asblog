@@ -21,7 +21,7 @@ Lastly, you must have a "saved search" that shows the products for which you wis
 
 Note that you can set your price threshold to 'any' in order to be notified if an item becomes available at 'any' price. This can/should be set on saved searches that return no results. You are then notified if what you are looking for arrives in-stock at 'any' price. This is the method to use for checking the in-stock/availability of product(s) which again, is extremely useful/relevant right now.
 
-### About Notifications
+### Notifications
 
 There are two methods we offer to notify you when your threshold is met/beat. The first is via email. This is a required method and cannot be disabled. The other method is via text (SMS) message. This is completely optional and is the only reason we ask for your mobile number during registration. If you do not wish to be alerted via text message then there is no need to provide us with your phone number during registration. You can remove or update your number under the 'Account Settings' menu at any time.
 
@@ -61,9 +61,22 @@ You can turn on/off alerting for individual saved searches from the 'Saved Searc
 
 These settings allow you to manage everything with your saved searches and alerts, including: deleting saved searches, adjusting alert price thresholds, and as mentioned above, turning alerting on/off for specific saved searches.
 
-### In Conclusion
+### Tips and "The Fine Print"
+
+- It is important to be as specific as possible with your saved search otherwise you run the risk of being alerted for unintended or incorrect products. For example, if you know you only want "new" condition ammo then you should specify that in your search.
+
+- If a search returns nothing found you are not required to enter 'any' for the threshold. You can still enter a cost-per-round price that matches your requirements. However, it is important to not enter a high or completely unreasonable price threshold. This will just take up space, never alert, and be a waste of system resources.
+
+- Once a search is saved it cannot be edited. It must be deleted, then a new search performed and saved again.
+
+- Saved searches are labeled/named based on the search parameters. This label/name cannot be customized.
+
+- Our exclude retailers feature is still "in-play" for alerts. This means any retailer on your retailer exclusion list will not alert you if the excluded retailer meets/beats your price threshold.
+
+- Currently, it can take our systems several minutes to process through all the alerts that are set. Especially during times of high demand finding a good price can be somewhat similar to winning a lottery. You have the best chance by immediately responding to an alert notification. Sometimes, popular products can be in-stock one minute, then be sold out in the next. Unfortunately, there are no guarantees due to the limitations of the system. We are working on optimizations, but for now this is the harsh reality.
+
+### Good Luck
 
 That's all for now. Please don't hesitate to [contact us](https://ammoseek.com/contact) if you have any questions or if something doesn't work properly for you.
 
-Most importantly, stay safe and healthy during these uncertain times!
-****
+Most importantly, we wish you good luck at finding the ammo deal of your dreams. Please shoot straight, stay safe, and stay healthy during these uncertain times!
