@@ -15,7 +15,7 @@ Any retailer you place on this list will prevent their products from appearing i
 
 First, you'll need a a free AmmoSeek account. You can [register from the signin page](https://ammoseek.com/signin). Once you have completed activation of your account you will then have access to [your exclude retailers](https://ammoseek.com/exclude_retailers) page.
 
-You can access your exclude retailers page/form underneath your user menu once you are signed in. The user menu is under the button/dropdown in the upper right corner of your browser window (or under the hamburger / three bars menu on mobile).  In both cases, the dropdown/button is labeled with the name you entered during registration of your account. Once in the menu, just select the menu option labeled "Exclude Retailer".
+You can access your exclude retailers page underneath your user menu once you are signed in. The user menu is under the button/dropdown in the upper right corner of your browser window (or under the hamburger / three bars menu on mobile).  In both cases, the dropdown/button is labeled with the name you entered during registration of your account. Once in the menu, just select the menu option labeled "Exclude Retailers".
 
 Once on the "Exclude Retailers" page you are presented with some instructions and an empty box. Clicking in the empty box will list retailers in a dropdown. You can then select as many retailers as you wish. Each will be added to the box indicating you wish to exclude their products from your searches and alerts.
 
