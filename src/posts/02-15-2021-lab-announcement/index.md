@@ -5,17 +5,17 @@ date: 2021-02-15
 featuredImage: './casing-tweezers.jpg'
 ---
 
-Today we'd like to announce a new effort that we've dubbed The AmmoSeek Lab. This is a new web site where we will be making upcoming AmmoSeek features and updates available for you to use.
+Today we'd like to announce a new effort that we've dubbed The AmmoSeek Lab. This is a new web site where we will be making upcoming AmmoSeek features/updates available for you to try out before they are generally available on our production site.
 
 The only catch is that you should expect there to be bugs and the site may not work properly for you at times (especially when we are updating it).
 
 ## Why are we doing this?
 
-We are doing this because we are small team and we'd like your help in finding bugs before they cause havoc on our production site. The goal is to minimize problems with new feature updates before they go to production.
+We are doing this because we are small team and we'd like your help in finding bugs before they wreak havoc on our production site. The goal is to minimize problems with new feature updates before they go to production.
 
 Please, please, pretty please, [contact us with any bugs you encounter](https://ammoseek.com/contact) and try to provide as much detail about what you are seeing as possible. Sending us a screenshot is usually incredibly helpful in assisting us in identifying and fixing things.
 
-We are continually working on making AmmoSeek as helpful as it can be and this should help us toward that aim as we enlist our sizable audience to scream at us when they find something wrong with the lab code.
+We are continuously working on making AmmoSeek as helpful as it can be and this should help us toward that aim as we enlist our sizable audience to scream at us when they find something wrong with the lab site.
 
 ## Accessing the lab
 
@@ -46,7 +46,7 @@ Here is a list of some of the major updates that are in this lab release. This w
 
 **Mobile Bottom Navigation**: On mobile-sized devices we have moved the selection of most actions to a bottom navigation bar to make it "less cumbersome" to use the app/site on such devices. The basic "by caliber" search form is now top/front/center (by default). This is part of our larger effort to make the web site behave more like a mobile app.
 
-**Search Forms Update**: The entire search form behavior has been updated to be more performant along with some style changes (ie. moved some search parameters to "radio" buttons so not everything is a 'dropdown').
+**Search Forms Update**: The entire search form behavior has been updated to be more performant along with some style changes (i.e. moved some search parameters to "radio" buttons so not everything is a dropdown menu).
 
 **Modify Search Update**: On the results pages, the modify search results form is now displayed in various states depending upon your browser width. For mobile, the modify form will slide up from the bottom navigation menu. For medium/tablet and smaller desktop browser widths the modify form can be opened/closed by clicking the Modify Search buttons, however, the form now pushes the results content so it is no longer obscured by the form. On larger widths, the modify form is open by default and must be toggled to be closed if you don't wish to see it next to the results.
 
