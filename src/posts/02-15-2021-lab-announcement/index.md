@@ -19,8 +19,6 @@ We are continuously working on making AmmoSeek as helpful as it can be and this 
 
 ## Accessing the lab
 
-Read below for details on the new features that we have implemented in this, our first, lab release.
-
 **IMPORTANT NOTE**: For now, the lab requires entering a special username and password to get to the site. You will be prompted to enter these credentials when initially accessing it.
 
 These 'access' credentials are not the same credentials you use for logging in to AmmoSeek itself. You must first gain access with these credentials and then also login with your individual AmmoSeek account (if you have one).
@@ -37,8 +35,6 @@ https://lab.ammoseek.com/
 Login: labguest
 Password: getammoftw
 ```
-
-If these credentials do not work for you it means that we have changed them and have closed down access (temporarily) to the lab. Or we just haven't updated this article with the updated credentials.
 
 ## First Lab Release Change Log
 
