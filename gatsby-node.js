@@ -1,66 +1,51 @@
-const path = require('path');
-const { paginate, createPagePerItem } = require('gatsby-awesome-pagination');
+const path = require('path')
+const { paginate, createPagePerItem } = require('gatsby-awesome-pagination')
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
    const { createPage } = actions
-   return new Promise((resolve, reject) => {
-      graphql(`
-         {
-            allMarkdownRemark(
-               sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-               edges {
-                  node {
-                     id
-                     frontmatter {
-                        title
-                        slug
-                     }
+   await graphql(`
+      {
+         allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+         ) {
+            edges {
+               node {
+                  id
+                  frontmatter {
+                     title
+                     slug
                   }
                }
             }
          }
-      `).then(results => {
-         if (results.errors) {
-            console.log(results.errors);
-            reject(results.errors);
-         }
+      }
+   `).then(results => {
+      if (results.errors) {
+         console.log(results.errors)
+         reject(results.errors)
+      }
 
-         paginate({
-            createPage,
-            items: results.data.allMarkdownRemark.edges,
-            component: path.resolve('./src/templates/index.js'),
-            itemsPerPage: 5,
-            itemsPerFirstPage: 5,
-            pathPrefix: "/"
-         })
-
-         // results.data.allMarkdownRemark.edges.forEach(({ node }) => {
-         //    createPage({
-         //       path: `/posts/${node.frontmatter.slug}`,
-         //       component: path.resolve('./src/templates/postLayout.js'),
-         //       context: {
-         //          slug: node.frontmatter.slug,
-         //       }
-         //    })
-         // })
-
-         createPagePerItem({
-            createPage,
-            items: results.data.allMarkdownRemark.edges,
-            component: path.resolve('./src/templates/postLayout.js'),
-            itemToPath: (item) => {
-               if (item) {
-                  return `/posts/${item.node.frontmatter.slug}`
-               }
-               else {
-                  return ''
-               }
-            },
-            itemToId: 'node.id'
-         })
-
+      paginate({
+         createPage,
+         items: results.data.allMarkdownRemark.edges,
+         component: path.resolve('./src/templates/index.js'),
+         itemsPerPage: 5,
+         itemsPerFirstPage: 5,
+         pathPrefix: '/',
       })
-      resolve()
+
+      createPagePerItem({
+         createPage,
+         items: results.data.allMarkdownRemark.edges,
+         component: path.resolve('./src/templates/postLayout.js'),
+         itemToPath: item => {
+            if (item) {
+               return `/posts/${item.node.frontmatter.slug}`
+            } else {
+               return ''
+            }
+         },
+         itemToId: 'node.id',
+      })
    })
 }
