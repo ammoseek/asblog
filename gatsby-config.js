@@ -9,29 +9,29 @@ module.exports = {
          {
             name: `RSS Feed`,
             url: `https://blog.ammoseek.com/rss.xml`,
-            icon: `./images/feed-icon.svg`
+            icon: `./images/feed-icon.svg`,
          },
          {
-           name: `Twitter`,
-           url: `https://twitter.com/ammoseek`,
-           icon: `./images/twitter.svg`
+            name: `Twitter`,
+            url: `https://twitter.com/ammoseek`,
+            icon: `./images/twitter.svg`,
          },
          {
-           name: `Facebook`,
-           url: `https://facebook.com/ammoseek`,
-           icon: `./images/facebook.svg`
-         }
-       ],
+            name: `Facebook`,
+            url: `https://facebook.com/ammoseek`,
+            icon: `./images/facebook.svg`,
+         },
+      ],
       siteLinks: [
          {
             name: 'Gun Talk',
-            url: 'https://guntalk.com'
+            url: 'https://guntalk.com',
          },
          {
             name: 'Ammoland',
-            url: 'https://ammoland.com'
+            url: 'https://ammoland.com',
          },
-      ]
+      ],
    },
    plugins: [
       `gatsby-plugin-react-helmet`,
@@ -39,7 +39,7 @@ module.exports = {
          resolve: 'gatsby-plugin-react-helmet-canonical-urls',
          options: {
             siteUrl: 'https://blog.ammoseek.com',
-         }
+         },
       },
       'gatsby-plugin-sitemap',
       'gatsby-plugin-robots-txt',
@@ -65,12 +65,23 @@ module.exports = {
                      return allMarkdownRemark.edges.map(edge => {
                         return Object.assign({}, edge.node.frontmatter, {
                            description: `
-                              <img align="left" hspace="8" width="200" height="125" src="${site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL}"/><br />
+                              <img align="left" hspace="8" width="200" height="125" src="${site
+                                 .siteMetadata.siteUrl +
+                                 edge.node.frontmatter.featuredImage
+                                    .publicURL}"/><br />
                               ${edge.node.excerpt}`,
                            date: edge.node.frontmatter.date,
-                           url: site.siteMetadata.siteUrl + '/posts/' + edge.node.frontmatter.slug,
-                           guid: site.siteMetadata.siteUrl + '/posts/' + edge.node.frontmatter.slug,
-                           custom_elements: [{ "content:encoded": edge.node.html }],
+                           url:
+                              site.siteMetadata.siteUrl +
+                              '/posts/' +
+                              edge.node.frontmatter.slug,
+                           guid:
+                              site.siteMetadata.siteUrl +
+                              '/posts/' +
+                              edge.node.frontmatter.slug,
+                           custom_elements: [
+                              { 'content:encoded': edge.node.html },
+                           ],
                         })
                      })
                   },
@@ -97,16 +108,16 @@ module.exports = {
                      }
                   `,
                   output: '/rss.xml',
-               }
-            ]
-         }
+               },
+            ],
+         },
       },
       {
          resolve: `gatsby-plugin-google-analytics`,
          options: {
-            trackingId: "UA-5694615-14",
-            head: true
-         }
+            trackingId: 'UA-5694615-14',
+            head: true,
+         },
       },
       {
          resolve: `gatsby-source-filesystem`,
@@ -130,24 +141,26 @@ module.exports = {
                   resolve: 'gatsby-remark-images',
                   options: {
                      maxWidth: 320,
+                     showCaptions: true,
                   },
                },
                {
-                  resolve: "gatsby-remark-embed-video",
+                  resolve: 'gatsby-remark-embed-video',
                   options: {
-                    width: 320,
-                    maxWidth: 320,
-                    related: false,
-                    noIframeBorder: true,
-                    urlOverrides: [
-                      {
-                        id: 'youtube',
-                        embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
-                      }
-                    ]
-                  }
+                     width: 320,
+                     maxWidth: 320,
+                     related: false,
+                     noIframeBorder: true,
+                     urlOverrides: [
+                        {
+                           id: 'youtube',
+                           embedURL: videoId =>
+                              `https://www.youtube-nocookie.com/embed/${videoId}`,
+                        },
+                     ],
+                  },
                },
-               'gatsby-remark-responsive-iframe'
+               'gatsby-remark-responsive-iframe',
             ],
          },
       },

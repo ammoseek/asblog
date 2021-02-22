@@ -631,3 +631,6 @@ pre tt:after {
       margin-top: 1rem;
    }
 }
+.gatsby-resp-image-figcaption {
+   text-align: center;
+}
