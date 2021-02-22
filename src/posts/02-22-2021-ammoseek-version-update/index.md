@@ -5,7 +5,7 @@ date: 2021-02-22
 featuredImage: './new-release.jpg'
 ---
 
-Today we have a new AmmoSeek major release to announce. This update includes major changes in style, functionality, and behavior. We've done our best with testing things, but there will likely be some bugs. If you discover any, please [report them](https://ammoseek.com/contact).
+Today we have a new AmmoSeek major release to announce. This update includes major changes in style, functionality, and behavior. We've done our best with testing things, but there will likely be some bugs. If you discover any, please [report them](https://ammoseek.com/contact/).
 
 With that out of the way, let's go through all the changes.
 
