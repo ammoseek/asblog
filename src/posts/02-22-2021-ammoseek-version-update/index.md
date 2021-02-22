@@ -51,7 +51,7 @@ For desktop browsers the main page remains largely unchanged, other than a few m
 
 First, depending upon the width of the browser window you will either see the modify search options on the left or it will require clicking the toggle button to open/close it. These modify search options no longer obscure the results. Instead it pushes/expands/reformats the results as required to be seen at all times.
 
-At certain widths the results will be presented in table (spreadsheet) form and at others the results will be displayed in multi-line sections similar to the way the results appear on mobile devices. It also will adjust accordingly and differently if you are in "compact results mode" or not.
+At certain widths the results will be presented in table (spreadsheet) form and at others the results will be displayed in multi-line sections similar to the way the results appear on mobile devices. It also will adjust accordingly and differently if you are in ["compact results mode"](/posts/ammoseek-feature-compact-results) or not.
 
 Here are some screenshots of various views of the new results pages.
 
@@ -74,6 +74,6 @@ I think you get the point by now. We hope you find the changes as a good step to
 
 Please reach out to us if you notice any bugs or poor behavior with this update. As mentioned above there will likely be some bugs and we'd like to get them fixed!
 
-To report bugs [contact us here](https://ammoseek.com/contact).
+To report bugs [contact us here](https://ammoseek.com/contact/).
 
 Happy AmmoSeeking!
