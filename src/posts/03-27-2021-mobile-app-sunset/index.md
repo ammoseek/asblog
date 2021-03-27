@@ -2,7 +2,7 @@
 title: 'Mobile App Sunset'
 slug: app-sunset
 date: 2021-03-27
-featuredImage: './gma-sunset.png'
+featuredImage: './gma-shooting-appstores.png'
 ---
 
 We are sad to report that our native mobile app for both IOS and Android is going away.
