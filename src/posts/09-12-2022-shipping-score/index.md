@@ -20,7 +20,7 @@ The new scores look like the following (click the image to see a larger view):
 
 ![New shipping score meters](./shipping-meters.png)
 
-The **F** "score" represents free shipping. The other scores go from 10 down to 1 with 10 (green) representing the lowest cost shipping and 1 (red) representing the highest. In addition, if the product ships free under certain conditions, it will be represented with a CF next to the meter. For example:
+The **F** "score" represents free shipping. The other scores go from 10 down to 1 with 10 (green) representing the best shipping costs and 1 (red) representing the worst shipping costs. In addition, if the product ships free under certain conditions, it will be represented with a CF next to the meter. For example:
 
 ![Conditionally Free](./cf-meter.png)
 
@@ -33,7 +33,7 @@ Please remember that our system may not represent actual or precise shipping cos
 With this update, we've also implemented a long-requested feature: showing only free shipping in search results. For ammunition searches there is a new way to specify the shipping scores you want to show in your search results. Here are some examples:
 
 ![Show results with ONLY free shipping](./shipping-score-free.png)
-![Show results with cheaper shipping costs (scores greater than 6)](./shipping-score.png)
+![Show results with better shipping costs (scores greater than 6)](./shipping-score.png)
 ![Show results with ONLY free and conditionally free shipping costs](./shipping-score-cf-free.png)
 
 ### Confusion and Conclusion
@@ -41,8 +41,8 @@ With this update, we've also implemented a long-requested feature: showing only 
 There is some concern that the new system could cause some confusion: a higher score means cheaper shipping. In our previous system a higher number of bars in the meter image meant higher shipping. The old system had no color coded graphic, but the new system does.
 
 **BOTTOM LINE:** For results without free shipping:
-- The <span style="color:green;">**MORE GREEN**</span> (HIGHER SCORE) the bar in the meter, the cheaper the shipping.
-- The <span style="color:red;">**MORE RED**</span> (LOWER SCORE) the bar in the meter, the more expensive the shipping.
+- The <span style="color:green;">**MORE GREEN**</span> (HIGHER SCORE) the bar in the meter, the better the shipping costs.
+- The <span style="color:red;">**MORE RED**</span> (LOWER SCORE) the bar in the meter, the worse the shipping costs.
 
 There is quite a bit of new code in this update. If you notice any bugs or have any questions about the new system please [let us know](https://ammoseek.com/contact).
 
